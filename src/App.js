@@ -10,16 +10,17 @@ import {
 
   Link
 } from "react-router-dom";
+import Shop from './Component/Shop';
 function App() {
   return (
     <div className="App">
 
-      <Navbar />
-      <Router>
+     
+      <Router> <Navbar />
         <Routes>
 
           <Route exact path="/about" element={<About></About>} />
-
+          <Route exact path="/shop" element={<Shop></Shop>} />
         </Routes>
 
 
